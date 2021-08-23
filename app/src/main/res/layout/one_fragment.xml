@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.oneFragment">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="0.01"
+        android:padding="15dp"
+        android:shadowColor="#79BEC0CA"
+        android:shadowDx="7"
+        android:shadowDy="4"
+        android:shadowRadius="15"
+        android:text="@string/safe_blood_delivery"
+        android:textAlignment="center"
+        android:textColor="@color/textBlack2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/study2"
+        app:layout_constraintVertical_bias="0.94" />
+
+
+    <ImageView
+        android:id="@+id/study2"
+        android:layout_width="0dp"
+        android:layout_height="406dp"
+        android:padding="95dp"
+        android:paddingEnd="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sizee"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginBottom="16dp"
+        android:padding="15dp"
+        android:shadowColor="#BEC0CA"
+        android:shadowDy="2"
+        android:shadowRadius="11"
+
+        android:text="@string/exp2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

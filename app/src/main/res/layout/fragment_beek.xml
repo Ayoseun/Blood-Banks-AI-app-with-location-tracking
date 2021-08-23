@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".ui.BeekFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/shape6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+
+            android:shadowColor="@color/textColor"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="15"
+            android:text="Royal Blood Bank"
+            android:textAlignment="center"
+            android:textColor="@color/bgWhite"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <TextView
+
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+                android:shadowRadius="15"
+                android:text="Ultimate Bank"
+                android:textAlignment="center"
+
+                android:textColor="@color/textBlack2"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Spinner
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/cover2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:src="@drawable/woman"
+                app:civ_border_color="@color/bgWhite"
+                app:civ_border_width="2dp" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cpb_background_progressbar_color="#00B6BBD8"
+                app:cpb_background_progressbar_color_direction="left_to_right"
+
+                app:cpb_background_progressbar_width="13dp"
+                app:cpb_progress="4"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progress_max="7"
+                app:cpb_progressbar_color_direction="right_to_left"
+                app:cpb_progressbar_color_end="#0CB6EA"
+                app:cpb_progressbar_color_start="#5C007AFE"
+                app:cpb_progressbar_width="20dp"
+                app:cpb_round_border="false" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:shadowColor="#F3F3F3"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="15"
+            android:text="Meta: 2L"
+            android:textAlignment="center"
+            android:textColor="#0CB6EA"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <TextView
+                android:id="@+id/hun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+
+                android:shadowRadius="15"
+                android:text="100"
+
+                android:textAlignment="center"
+                android:textColor="#0CB6EA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+
+                android:shadowRadius="15"
+                android:text="80"
+
+                android:textAlignment="center"
+                android:textColor="#0CB6EA"
+                app:layout_constraintEnd_toEndOf="@+id/hun"
+                app:layout_constraintStart_toStartOf="@+id/hun"
+                app:layout_constraintTop_toBottomOf="@+id/hun" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+
+                android:shadowRadius="15"
+                android:text="60"
+
+                android:textAlignment="center"
+                android:textColor="#0CB6EA"
+                app:layout_constraintEnd_toEndOf="@+id/eight"
+                app:layout_constraintStart_toStartOf="@+id/eight"
+                app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+
+                android:shadowRadius="15"
+                android:text="40"
+
+                android:textAlignment="center"
+                android:textColor="#0CB6EA"
+                app:layout_constraintEnd_toEndOf="@+id/six"
+                app:layout_constraintStart_toStartOf="@+id/six"
+                app:layout_constraintTop_toBottomOf="@+id/six" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#F3F3F3"
+                android:shadowDx="7"
+                android:shadowDy="4"
+
+                android:shadowRadius="15"
+                android:text="20"
+
+                android:textAlignment="center"
+                android:textColor="#0CB6EA"
+                app:layout_constraintEnd_toEndOf="@+id/four"
+                app:layout_constraintStart_toStartOf="@+id/four"
+                app:layout_constraintTop_toBottomOf="@+id/four" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/beekRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+            android:background="#00526474"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:listitem="@layout/slate" />
+
+        <TextView
+
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:shadowColor="#F3F3F3"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="15"
+            android:text="Update Blood Pint"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/butSig"
+            app:layout_constraintEnd_toEndOf="@+id/butSig"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/butSig" />
+
+        <TextView
+
+            android:id="@+id/textView6"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#F3F3F3"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="15"
+
+            android:text="Cick Insert to add new record or update bank!"
+            android:textAlignment="center"
+            android:textColor="#8C92A4"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/butSig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="85dp"
+            android:layout_marginBottom="116dp"
+            android:background="@drawable/shape8"
+            android:padding="1dp"
+            android:text="Insert"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ListView
+            android:id="@+id/listV"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="#00526474"
+            android:divider="@color/bgWhite"
+            android:dividerHeight="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSig"
+            tools:listitem="@layout/slate2" />
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

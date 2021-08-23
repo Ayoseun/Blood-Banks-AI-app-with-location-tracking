@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TeamMagneto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exp">Built with AI recommender system to prescribe blood recommendation and Blood Banks</string>
+    <string name="exp2">Blood delivery system with location tracker to ensure fast and safe blood supply delivery</string>
+    <string name="safe_blood_delivery">AI Powered Blood Bank Recommendation System</string>
+    <string name="tested_ai_powered_health_care">Health care Is Now Powered By AI</string>
+</resources>
